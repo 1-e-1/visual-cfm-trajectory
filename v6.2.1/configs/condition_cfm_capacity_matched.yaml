@@ -1,0 +1,15 @@
+seed: 20260814
+trajectory_shape: [64, 6]
+base_condition_dim: 15
+condition_layout: [q_start, q_pose_ik, p_goal]
+goal_condition_dof: 6
+periodic_joints: true
+diffusion_steps: 1000
+model:
+  hidden_dim: 288
+  num_layers: 5
+  num_heads: 6
+  dropout: 0.1
+  time_embedding_dim: 128
+vision_encoder:
+  camera_views: 5

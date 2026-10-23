@@ -1,0 +1,1814 @@
+{
+  "date": "2026-10-24",
+  "owner": "1-e-1",
+  "method": "Visual-geometric conditional flow matching for candidate arm trajectories and grasp/place experiments",
+  "files": [
+    {
+      "path": "v6.2.1/baselines/attachment_constraint_v632/README.md",
+      "source_project": "v621",
+      "source_path": "baselines/attachment_constraint_v632/README.md",
+      "sha256_original": "126ddc6f412a76d76dbe025c2960b887807d3faf10f0eda1d75ca9dc6d72a698",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/baselines/attachment_constraint_v632/configs/grasp_place_pipeline.yaml",
+      "source_project": "v621",
+      "source_path": "baselines/attachment_constraint_v632/configs/grasp_place_pipeline.yaml",
+      "sha256_original": "021420be3694495d908ff76f3890d57a3dc9cb8be6e84f6f88fd9de6a468440f",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/baselines/attachment_constraint_v632/configs/grasp_place_pose.yaml",
+      "source_project": "v621",
+      "source_path": "baselines/attachment_constraint_v632/configs/grasp_place_pose.yaml",
+      "sha256_original": "ec6bb8dbd6d6c231f74a27bb2adbd6609532f62ed2d1c6e5f50d2151cbbf737a",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/baselines/attachment_constraint_v632/scripts/execute_pose_grasp_place_physx.py",
+      "source_project": "v621",
+      "source_path": "baselines/attachment_constraint_v632/scripts/execute_pose_grasp_place_physx.py",
+      "sha256_original": "c8df66bd6ce09bd5004343645f7c79cf627bd4da0aa2551455f7df7cbfa3eb5a",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/configs/ablations.yaml",
+      "source_project": "v621",
+      "source_path": "configs/ablations.yaml",
+      "sha256_original": "cab0a2cfc4c09347150fb4f3c082d8cc0d704a7d6c03afb8d066eb8c4949b372",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/configs/balance.yaml",
+      "source_project": "v621",
+      "source_path": "configs/balance.yaml",
+      "sha256_original": "d4075d118bb759810f0bccebbb2c067ddb33df41814d9ba465c7cab7273c720c",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/configs/condition_cfm_capacity_matched.yaml",
+      "source_project": "v621",
+      "source_path": "configs/condition_cfm_capacity_matched.yaml",
+      "sha256_original": "940c3a4f31a726267e3441a6ae013401854e66b9184075785f9f02adf8ce4bb9",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/configs/dataset.yaml",
+      "source_project": "v621",
+      "source_path": "configs/dataset.yaml",
+      "sha256_original": "aae3131c0b8f217db84cc8bb5d85abbb5c8ca6d011b2a01f4b2013acc8da43ab",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/configs/evaluation.yaml",
+      "source_project": "v621",
+      "source_path": "configs/evaluation.yaml",
+      "sha256_original": "ed092b87659f45ba81d3b24e3595f450016c9e79a85284243da4a1c548567c96",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/configs/flow_matching.yaml",
+      "source_project": "v621",
+      "source_path": "configs/flow_matching.yaml",
+      "sha256_original": "725fa77e7512c22392c8b31468210a5a5b8ef08837589fb558f6e9fd1cd63f4f",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/configs/grasp_place_native_contact.yaml",
+      "source_project": "v621",
+      "source_path": "configs/grasp_place_native_contact.yaml",
+      "sha256_original": "109d5cf0ab83415fb7bbc3b66affbbe10f82533f01ba2d793fc42936449f78ee",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/configs/grasp_place_native_pose.yaml",
+      "source_project": "v621",
+      "source_path": "configs/grasp_place_native_pose.yaml",
+      "sha256_original": "f5c50734c499f87371aef5584ccb9778aef0848963eb80375c29a469aa4fc6ec",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/configs/grasp_place_pipeline.yaml",
+      "source_project": "v621",
+      "source_path": "configs/grasp_place_pipeline.yaml",
+      "sha256_original": "bc38c891c896eb6c29aac4ad025295d878d565789f2b45f994f049069f437c51",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/configs/grasp_place_pose.yaml",
+      "source_project": "v621",
+      "source_path": "configs/grasp_place_pose.yaml",
+      "sha256_original": "ec6bb8dbd6d6c231f74a27bb2adbd6609532f62ed2d1c6e5f50d2151cbbf737a",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/configs/kinematic_chain.json",
+      "source_project": "v621",
+      "source_path": "configs/kinematic_chain.json",
+      "sha256_original": "a028e53c92ed768398fb81ea14db4f8bdc7a24993928bcd77cb29e49a1dd3a0d",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/configs/nasa_astronaut_native_contact_20tasks.yaml",
+      "source_project": "v621",
+      "source_path": "configs/nasa_astronaut_native_contact_20tasks.yaml",
+      "sha256_original": "956e877cb1a01aef3e244f30719e6728e879ec5242787407515adbb71529a913",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/configs/obstacle_flow_matching.yaml",
+      "source_project": "v621",
+      "source_path": "configs/obstacle_flow_matching.yaml",
+      "sha256_original": "fedc126f500cb879a67fd9d564ac6d708a5bc4c3d79f83bf2ff1d4c28d8a141d",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/configs/obstacle_flow_matching_highres.yaml",
+      "source_project": "v621",
+      "source_path": "configs/obstacle_flow_matching_highres.yaml",
+      "sha256_original": "56133b08d146c883cfcd78955c51bc5af263bae3b5e4f2e646167f4256f1920f",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/configs/obstacle_flow_matching_multiview.yaml",
+      "source_project": "v621",
+      "source_path": "configs/obstacle_flow_matching_multiview.yaml",
+      "sha256_original": "44a1b80d3f465d29203b05773ef9f354f109e13700c5a6841a2439c744fe428f",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/configs/obstacles.yaml",
+      "source_project": "v621",
+      "source_path": "configs/obstacles.yaml",
+      "sha256_original": "22413a2dcf241557f517d3cfccf3a529fcdd750aa61e36edb18f1cd496d80d00",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/configs/obstacles_highres.yaml",
+      "source_project": "v621",
+      "source_path": "configs/obstacles_highres.yaml",
+      "sha256_original": "3aa3e8e132e4c8851c5296fdbb55db02faabeefb983252a0fd8f37281efbedcf",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/configs/paper_v622_pose_experiments.yaml",
+      "source_project": "v621",
+      "source_path": "configs/paper_v622_pose_experiments.yaml",
+      "sha256_original": "b9399993ac24f433688f57e7233b257ac684b3e121330746f596b6315a18d555",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/configs/robot.yaml",
+      "source_project": "v621",
+      "source_path": "configs/robot.yaml",
+      "sha256_original": "fe3352cd0656fad9f7b7e1639c50923616c194cc5d02512ec8bf6bc8ac2642cd",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/configs/task_generation.yaml",
+      "source_project": "v621",
+      "source_path": "configs/task_generation.yaml",
+      "sha256_original": "e690f7ba0c1b75c97ba7d86e8bcd268308716bc7fcfbcab530ab783e963a0da4",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/configs/trajectory_optimizer.yaml",
+      "source_project": "v621",
+      "source_path": "configs/trajectory_optimizer.yaml",
+      "sha256_original": "3809fffeea12d6d40b34c4ff6d9ead9753e03fbcf30943991dad9f8c98a77c60",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/configs/trajectory_visual.yaml",
+      "source_project": "v621",
+      "source_path": "configs/trajectory_visual.yaml",
+      "sha256_original": "edf51663eb0daba47bfd715faadb4f007d943567ea629874c0b36ca815f56693",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/configs/visual_cfm_five_view_v5_frozen_manifest.yaml",
+      "source_project": "v621",
+      "source_path": "configs/visual_cfm_five_view_v5_frozen_manifest.yaml",
+      "sha256_original": "4c7610e6568169abaf03dfa09b38df218410eb3106db76bdb0c2994e714b8599",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/configs/visual_cfm_transfer.yaml",
+      "source_project": "v621",
+      "source_path": "configs/visual_cfm_transfer.yaml",
+      "sha256_original": "5ccd8e94511716c5457ce205ff762d14b1957ef7b4ec8ab84645cc49ddf5fcfc",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/configs/visual_cfm_transfer_4view.yaml",
+      "source_project": "v621",
+      "source_path": "configs/visual_cfm_transfer_4view.yaml",
+      "sha256_original": "5ccd8e94511716c5457ce205ff762d14b1957ef7b4ec8ab84645cc49ddf5fcfc",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/configs/visual_cfm_transfer_5view.yaml",
+      "source_project": "v621",
+      "source_path": "configs/visual_cfm_transfer_5view.yaml",
+      "sha256_original": "c15890f70df1a651223fbafd695412c319be71944cce2adffc438f0433755535",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/configs/visual_cfm_transfer_5view_v6.yaml",
+      "source_project": "v621",
+      "source_path": "configs/visual_cfm_transfer_5view_v6.yaml",
+      "sha256_original": "3d54f7f1db8e2ca72c60f9a4280918033909da9f995e8e8ee2c134f5e1bf880e",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/configs/visual_cfm_v621.yaml",
+      "source_project": "v621",
+      "source_path": "configs/visual_cfm_v621.yaml",
+      "sha256_original": "d7f8c87e6851741a49f5ecb688d0a436977db537691f13bbc275ba01fed690b4",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/configs/visual_cfm_v622_pose.yaml",
+      "source_project": "v621",
+      "source_path": "configs/visual_cfm_v622_pose.yaml",
+      "sha256_original": "70b027366047f4512f81d25b1b35cfd50ec6da75bc525f1b44fdd42b9e88a23a",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/configs/visual_cfm_v622_pose_large_encoder.yaml",
+      "source_project": "v621",
+      "source_path": "configs/visual_cfm_v622_pose_large_encoder.yaml",
+      "sha256_original": "2e2ac218cc9af23b74572ac08b1e43f918abf75be50815d43c9c91dfdd8a0bbb",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/configs/visual_cfm_v622_pose_single_wrist.yaml",
+      "source_project": "v621",
+      "source_path": "configs/visual_cfm_v622_pose_single_wrist.yaml",
+      "sha256_original": "762be11c6f394b41a2cd8e9fad11a5f50111c443bad7f0dbd92a2b2d17a1946f",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/docs/DATA_CONTRACT.md",
+      "source_project": "v621",
+      "source_path": "docs/DATA_CONTRACT.md",
+      "sha256_original": "e33bd184e814897e971b2cf71565e1211eb7da2f4f2e91618186ed2a245ca534",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/docs/v621\u8bba\u6587_\u6761\u4ef6\u6d41\u5339\u914d\u8f68\u8ff9\u751f\u6210\u65b9\u6cd5_\u521d\u7a3f.md",
+      "source_project": "v621",
+      "source_path": "docs/v621\u8bba\u6587_\u6761\u4ef6\u6d41\u5339\u914d\u8f68\u8ff9\u751f\u6210\u65b9\u6cd5_\u521d\u7a3f.md",
+      "sha256_original": "ba4dd5aa550f3a0999a595f6fe18c642f30f3572e5f4ef3e8ead511d0e73978c",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/docs/\u8bba\u6587\u56fe\u7247\u653e\u7f6e\u4e0e\u8868\u8fbe\u8bf4\u660e_20260816.md",
+      "source_project": "v621",
+      "source_path": "docs/\u8bba\u6587\u56fe\u7247\u653e\u7f6e\u4e0e\u8868\u8fbe\u8bf4\u660e_20260816.md",
+      "sha256_original": "c768cd2a2117467dd9a63ff82d2d5be5587f929e149a4e95fb5dd1fa92c28fea",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/experiment_logging/README.md",
+      "source_project": "v621",
+      "source_path": "experiment_logging/README.md",
+      "sha256_original": "c8b5981a04739e6fa05bd6ddada5e23715315ec43add6c26aa0114fe9a8614bd",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/experiment_logging/logger.py",
+      "source_project": "v621",
+      "source_path": "experiment_logging/logger.py",
+      "sha256_original": "d1eeebf2414dafc1a2b772ec8610f82878b8e6fe6e9f183e4f18dc5a3269d85c",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/experiment_logging/schema.py",
+      "source_project": "v621",
+      "source_path": "experiment_logging/schema.py",
+      "sha256_original": "0e271aeeba29d7191aee240dced4c0cbab7c0b07882d36900ea86ff145587507",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/experiment_logging/validate_logs.py",
+      "source_project": "v621",
+      "source_path": "experiment_logging/validate_logs.py",
+      "sha256_original": "5438e1cc30d2d797043652ae13250d8720bd46dc442f077f8a41efa94ccc5c05",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/paper_figures/build_manuscript_bundle.py",
+      "source_project": "v621",
+      "source_path": "paper_figures/build_manuscript_bundle.py",
+      "sha256_original": "0095ac6ff8e73af5fe56e835c7fa103190cc51da7964e3fe3f3ff116d6d985bd",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/paper_figures/build_visual_cfm_training_diagrams.py",
+      "source_project": "v621",
+      "source_path": "paper_figures/build_visual_cfm_training_diagrams.py",
+      "sha256_original": "094269c36a70a0bf75de2205abd5d24c48203b60a071cb6a750d2de2611fb110",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/paper_figures/builders.py",
+      "source_project": "v621",
+      "source_path": "paper_figures/builders.py",
+      "sha256_original": "486c91d9213870b275f0e42a044e8a844822a12373cff792c99b8857cfcb790a",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/paper_figures/common.py",
+      "source_project": "v621",
+      "source_path": "paper_figures/common.py",
+      "sha256_original": "3f650805329e8dd21a3e7b8ad5ebe428ed120151e848d33526d187f2cff66124",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/paper_figures/constants.py",
+      "source_project": "v621",
+      "source_path": "paper_figures/constants.py",
+      "sha256_original": "a28a1255d8df92171bb88e1d90f72772172a6348c69c2b7fe4a89bbf33706d11",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/paper_figures/make_all_figures.py",
+      "source_project": "v621",
+      "source_path": "paper_figures/make_all_figures.py",
+      "sha256_original": "bc7e9213d9e305625b519c69608fa6087d7b06f39c8f7bec6f9d8ef3423d6e37",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/paper_figures/scripts/_runner.py",
+      "source_project": "v621",
+      "source_path": "paper_figures/scripts/_runner.py",
+      "sha256_original": "22a3c4f435a5e874a5e17dd1438b42b4b17a0c7c20cc42708076b42deb976c81",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/paper_figures/scripts/fig01_task_overview.py",
+      "source_project": "v621",
+      "source_path": "paper_figures/scripts/fig01_task_overview.py",
+      "sha256_original": "e0a9775acb6af36906c64da3c95d7e2ec53d4c9957584f91692edd416e218546",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/paper_figures/scripts/fig02_system_pipeline.py",
+      "source_project": "v621",
+      "source_path": "paper_figures/scripts/fig02_system_pipeline.py",
+      "sha256_original": "f9d70ef58b4e6b06bf8c1bde5948a27264ec56b1a3b3b92f659c7dc160d28d9e",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/paper_figures/scripts/fig03_multiview_perception.py",
+      "source_project": "v621",
+      "source_path": "paper_figures/scripts/fig03_multiview_perception.py",
+      "sha256_original": "685c15c2387ca27bf62c043fc0b5e5aaa1c0a18ca8310646dda8db6af8a8ee9a",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/paper_figures/scripts/fig04_candidate_geometry.py",
+      "source_project": "v621",
+      "source_path": "paper_figures/scripts/fig04_candidate_geometry.py",
+      "sha256_original": "b15401e71de9f66f510234e835d967bc34235e763b6d3accf14dbdbb0c54e18a",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/paper_figures/scripts/fig05_residual_reconstruction.py",
+      "source_project": "v621",
+      "source_path": "paper_figures/scripts/fig05_residual_reconstruction.py",
+      "sha256_original": "c1cb9d9d89f5a6425b5c27e52ce6f3fdc10236d6cbdc10ac2e90ed1a5cd1d175",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/paper_figures/scripts/fig06_unseen_task_feasibility.py",
+      "source_project": "v621",
+      "source_path": "paper_figures/scripts/fig06_unseen_task_feasibility.py",
+      "sha256_original": "87737c7c6004c73c73ff47c8d1d5a2987231bc98d6c40f8fc8d347d508388710",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/paper_figures/scripts/fig07_low_impact_tradeoff.py",
+      "source_project": "v621",
+      "source_path": "paper_figures/scripts/fig07_low_impact_tradeoff.py",
+      "sha256_original": "e8307f336ada30f3bf81e77b160d6db6bbedfaf927532bd7cfa54982687fe129",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/paper_figures/scripts/fig08_candidate_scaling.py",
+      "source_project": "v621",
+      "source_path": "paper_figures/scripts/fig08_candidate_scaling.py",
+      "sha256_original": "35e63183ced87d035355656eb7062fce2bbbef570d0241c812b09da74cab539b",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/paper_figures/scripts/fig09_executability_ablation.py",
+      "source_project": "v621",
+      "source_path": "paper_figures/scripts/fig09_executability_ablation.py",
+      "sha256_original": "95db8af6636636be5a5b19b6b0fbf663feb946a3a9a5bff2eb75618b7cd63415",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/paper_figures/scripts/fig10_vision_ablation.py",
+      "source_project": "v621",
+      "source_path": "paper_figures/scripts/fig10_vision_ablation.py",
+      "sha256_original": "77b912e2a8791dbd6311e9703a3740584bcc7354c468ea61f0309b099e671a9e",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/paper_figures/scripts/fig11_physx_sequence.py",
+      "source_project": "v621",
+      "source_path": "paper_figures/scripts/fig11_physx_sequence.py",
+      "sha256_original": "f46653e7ad9aade44db36496ced99bc850e5a37f94930e368c7158e404ed661f",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/paper_figures/scripts/fig12_planner_pareto.py",
+      "source_project": "v621",
+      "source_path": "paper_figures/scripts/fig12_planner_pareto.py",
+      "sha256_original": "0e16eaaf5a02b750a1f16240304ce2c85deb0f1a6357e0c9d19d7d1ed5ffbf24",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/paper_figures/scripts/fig13_carrying_stability.py",
+      "source_project": "v621",
+      "source_path": "paper_figures/scripts/fig13_carrying_stability.py",
+      "sha256_original": "b734b33555b79654d198745830d691f441a23a630c27b160e4f306ee2611937a",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/paper_figures/scripts/fig14_failure_modes.py",
+      "source_project": "v621",
+      "source_path": "paper_figures/scripts/fig14_failure_modes.py",
+      "sha256_original": "065bfe0a4c82415f2923f27ffb1491c97cc2759647a932e92d42863bbea40af0",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/paper_figures/scripts/fig15_learning_baselines.py",
+      "source_project": "v621",
+      "source_path": "paper_figures/scripts/fig15_learning_baselines.py",
+      "sha256_original": "3494d812ce1f3b89efabd2e6cc83def6b52a85b11080808feabd1575502aa181",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/paper_figures/scripts/fig16_residual_landscape.py",
+      "source_project": "v621",
+      "source_path": "paper_figures/scripts/fig16_residual_landscape.py",
+      "sha256_original": "a28a2a32274e32af9446ba8dd8cbc2166c45668cdfd8419ee9211e8380c1c77c",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/paper_figures/scripts/fig17_runtime_breakdown.py",
+      "source_project": "v621",
+      "source_path": "paper_figures/scripts/fig17_runtime_breakdown.py",
+      "sha256_original": "f85325f69fc2cfd6055863e3da425b740089310336fdb0f6bc2a427945723fcb",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/requirements_project.txt",
+      "source_project": "v621",
+      "source_path": "requirements_project.txt",
+      "sha256_original": "ea83817af8c4b017b9ab9f1ae553bd60d33fd235aa115d77c20550c4cc0ff534",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2.1/scripts/_bootstrap.py",
+      "source_project": "v621",
+      "source_path": "scripts/_bootstrap.py",
+      "sha256_original": "656f5bc9ab8f2126b06a4db207df32d87cd3b3887450055c6af01cf58ac6f6a2",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/aggregate_paper_v622_extended.py",
+      "source_project": "v621",
+      "source_path": "scripts/aggregate_paper_v622_extended.py",
+      "sha256_original": "c5e081ded825b26a6b82c50771044620fa4554575bf4e59ff25ef1ea8aa20c86",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/aggregate_pose_paper_inference_sweeps.py",
+      "source_project": "v621",
+      "source_path": "scripts/aggregate_pose_paper_inference_sweeps.py",
+      "sha256_original": "e519c1dfe514bcf5548cefa8ddfcceeb009630987bf1e9cffee96ce1fe01e7c1",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/aggregate_pose_paper_main.py",
+      "source_project": "v621",
+      "source_path": "scripts/aggregate_pose_paper_main.py",
+      "sha256_original": "8ab4fb94d8305dadc8df2b80ff91c4dbb67322d40279217371950312a43c02c9",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/aggregate_pose_paper_robustness.py",
+      "source_project": "v621",
+      "source_path": "scripts/aggregate_pose_paper_robustness.py",
+      "sha256_original": "2825947cc5c00f1a6d45500da62c2d9d1d7454dc93c340b33125e34d49adaa97",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/aggregate_residual_weight_sweep.py",
+      "source_project": "v621",
+      "source_path": "scripts/aggregate_residual_weight_sweep.py",
+      "sha256_original": "bdb577ada73204daedf8cd092cb05b5f000fef97cbeaee2b9e736644a5558e69",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/aggregate_runtime_breakdown.py",
+      "source_project": "v621",
+      "source_path": "scripts/aggregate_runtime_breakdown.py",
+      "sha256_original": "22d9eb2cd417ec93246ceb83321fb7eed3d5d4ba8bf4d08003fbfc33bb3bdbe5",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/analyze_candidate_diversity.py",
+      "source_project": "v621",
+      "source_path": "scripts/analyze_candidate_diversity.py",
+      "sha256_original": "97568ad3d27206396add551c63d063f39545aec35f49391f894fb6408bbe884b",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/analyze_classical_planner_comparison.py",
+      "source_project": "v621",
+      "source_path": "scripts/analyze_classical_planner_comparison.py",
+      "sha256_original": "e446554fdd3d043e8e2d25343c3b965ec690685cab9a890793c3e09a705e41b0",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/analyze_difficulty_failure_modes.py",
+      "source_project": "v621",
+      "source_path": "scripts/analyze_difficulty_failure_modes.py",
+      "sha256_original": "db883f9de8e665c3b00c4011a209b3cd2fad4ca5f169fbe6293098fdc0b77414",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/analyze_pose_failures.py",
+      "source_project": "v621",
+      "source_path": "scripts/analyze_pose_failures.py",
+      "sha256_original": "de89d1dfc8912af6627fd8313cd9b0c74484059d6b012bb082fe9f8456757b5d",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/apply_terminal_pose_correction.py",
+      "source_project": "v621",
+      "source_path": "scripts/apply_terminal_pose_correction.py",
+      "sha256_original": "910eea0199d24915b8593314060d202895094a3f4525ad5f271d537a84b2d9df",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/audit_pose_dataset.py",
+      "source_project": "v621",
+      "source_path": "scripts/audit_pose_dataset.py",
+      "sha256_original": "e3df182ce3bff2046c3121f0f37ea029737751f252992e5347dac9d60eac134b",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/audit_pose_model.py",
+      "source_project": "v621",
+      "source_path": "scripts/audit_pose_model.py",
+      "sha256_original": "37faa4c96565d048dbd5e80a3455d29e6ba6aa1d5c86f3de269cd927e1c8f368",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/build_native_contact_plan.py",
+      "source_project": "v621",
+      "source_path": "scripts/build_native_contact_plan.py",
+      "sha256_original": "2ed6ca0a02635714bce86d077c9271ce69dfcc1e170a26fc6e6e1ec219059861",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/build_native_contact_pose_plan.py",
+      "source_project": "v621",
+      "source_path": "scripts/build_native_contact_pose_plan.py",
+      "sha256_original": "823a6114cab00896e79956cfbc9e31243edc326ff46d845363ee04d13b833104",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/build_native_return_place_plan.py",
+      "source_project": "v621",
+      "source_path": "scripts/build_native_return_place_plan.py",
+      "sha256_original": "d0305501f7764d82783775aaf910c1042861c57199dd2b705ce84d84f7d5897f",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/capture_current_astronaut_dataset_sample.py",
+      "source_project": "v621",
+      "source_path": "scripts/capture_current_astronaut_dataset_sample.py",
+      "sha256_original": "7b7f7e46ad7cd14a55065a56c0168960f8eead3d40398904dcc065a214e94645",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/capture_mounted_cameras.py",
+      "source_project": "v621",
+      "source_path": "scripts/capture_mounted_cameras.py",
+      "sha256_original": "b87405c0c851e8c167b91c32756649ed19a94b6d4b2ac3099245e9778cdf86b7",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/compare_pose_methods.py",
+      "source_project": "v621",
+      "source_path": "scripts/compare_pose_methods.py",
+      "sha256_original": "647f222a3310ca10b5e62263b1c7bb46ae32eebbc4989a1094aab2479080fc4a",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/configure_grasp_cameras_usd.py",
+      "source_project": "v621",
+      "source_path": "scripts/configure_grasp_cameras_usd.py",
+      "sha256_original": "37f880e8711951ca8a3045e9846c255c3502d0b3a6cbc6c9484a4ca1561dac76",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/configure_grasp_usd.py",
+      "source_project": "v621",
+      "source_path": "scripts/configure_grasp_usd.py",
+      "sha256_original": "d40283be71ae1466c914161fa3cc4fe1627097f3859c2388fb0a22ea4f41ca4a",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/configure_nasa_astronaut_aux_arm_scene.py",
+      "source_project": "v621",
+      "source_path": "scripts/configure_nasa_astronaut_aux_arm_scene.py",
+      "sha256_original": "946d771a4ee449f69bc82669d768dfb73942c8a9d428c4608b65aa3562e280b4",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/configure_nasa_astronaut_no_intersection_demo.py",
+      "source_project": "v621",
+      "source_path": "scripts/configure_nasa_astronaut_no_intersection_demo.py",
+      "sha256_original": "ce0011d0d6cfa81e43e2ee9a4e52d62d5571c8a7fb3a6f61a9b72df09b00989d",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/configure_nasa_astronaut_waist_mounted_scene.py",
+      "source_project": "v621",
+      "source_path": "scripts/configure_nasa_astronaut_waist_mounted_scene.py",
+      "sha256_original": "c42e85793463dd118460559a0f72ca07610355afd943d658aa77486a29729324",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/configure_native_contact_usd.py",
+      "source_project": "v621",
+      "source_path": "scripts/configure_native_contact_usd.py",
+      "sha256_original": "48f03366b9b680ee562bad09257044aee4b1f6d882778a9940bf2ab8474005eb",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/diagnose_grasp_pose_ik.py",
+      "source_project": "v621",
+      "source_path": "scripts/diagnose_grasp_pose_ik.py",
+      "sha256_original": "ffaa49e8d91b44e7b7880c36212904177465694fa9ed32f75a61604c89375bdd",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/diagnose_reference_grasp_waypoints.py",
+      "source_project": "v621",
+      "source_path": "scripts/diagnose_reference_grasp_waypoints.py",
+      "sha256_original": "16c28f3e29c0615a77bf8225e375fda20aef0909a85497cb77dfef2c82cd0376",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/evaluate_balance.py",
+      "source_project": "v621",
+      "source_path": "scripts/evaluate_balance.py",
+      "sha256_original": "ef30d6f156d1a2d78e49f1109274c113ef99538076f125ee85de13ea7125ef09",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/evaluate_candidate_bank_physx.py",
+      "source_project": "v621",
+      "source_path": "scripts/evaluate_candidate_bank_physx.py",
+      "sha256_original": "579ea61519a5e1bd8136b0dc0d092ee208767f707e059990eab802bee3ed9613",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/evaluate_classical_planners.py",
+      "source_project": "v621",
+      "source_path": "scripts/evaluate_classical_planners.py",
+      "sha256_original": "28288d91538e26989e5874b1b25ba85f5b3c3ce6761746d8b6f431f2a4f53452",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/evaluate_minimum_jerk_pose_baseline.py",
+      "source_project": "v621",
+      "source_path": "scripts/evaluate_minimum_jerk_pose_baseline.py",
+      "sha256_original": "62dca7bde380004f4f73bfb2dca707bb1eaaa7f0e7815183f8d4d8f08c9c4214",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/evaluate_visual_cfm_v621.py",
+      "source_project": "v621",
+      "source_path": "scripts/evaluate_visual_cfm_v621.py",
+      "sha256_original": "dfb7d5000c7dc6cd1d65431f237b8b398c244ce9c025f8456fcdc4fe49482cb5",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/execute_pose_grasp_place_native_contact.py",
+      "source_project": "v621",
+      "source_path": "scripts/execute_pose_grasp_place_native_contact.py",
+      "sha256_original": "e3805d4a509d28e65df4ab06d19f1f8ebf97f2e7d4726e65f5edfb29527d72cb",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/execute_pose_grasp_place_physx.py",
+      "source_project": "v621",
+      "source_path": "scripts/execute_pose_grasp_place_physx.py",
+      "sha256_original": "b5473f0847dd600d82662b4d616377c6459dface78d87c1d480e9a4255cdbf7b",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/export_visible_dataset_sample.py",
+      "source_project": "v621",
+      "source_path": "scripts/export_visible_dataset_sample.py",
+      "sha256_original": "a7e8591df239262f38ce8ac5789858e34a72a18b38a51821a85da7db791a89f8",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/generate_grasp_place_dataset.py",
+      "source_project": "v621",
+      "source_path": "scripts/generate_grasp_place_dataset.py",
+      "sha256_original": "1f6d26f1ddb3bf2facb631ca4e9f264e8ba25ec9b1243633638574f488f105aa",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/plan_pose_grasp_place.py",
+      "source_project": "v621",
+      "source_path": "scripts/plan_pose_grasp_place.py",
+      "sha256_original": "a27e5b1fa228749ac20eb33c0388b5764e07fdcb84f434c5d0367b777250b0e1",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/plot_task_joint_trajectory.py",
+      "source_project": "v621",
+      "source_path": "scripts/plot_task_joint_trajectory.py",
+      "sha256_original": "547bf8a2ad7010c449b54519f216666c7921aea399978e02b1af0935b1d723c1",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/record_nasa_astronaut_20tasks.py",
+      "source_project": "v621",
+      "source_path": "scripts/record_nasa_astronaut_20tasks.py",
+      "sha256_original": "7b92e4cd9c8934549584eff079b047d86cb6011c476c4ec0585ef7612d85b43a",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/render_grasp_place_demo_v6.py",
+      "source_project": "v621",
+      "source_path": "scripts/render_grasp_place_demo_v6.py",
+      "sha256_original": "11ead2ed6a3f92c11c311d90eb629c318e097bf1205a748dc1c657b3efddeb11",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/repath_supplementary_scene_assets.py",
+      "source_project": "v621",
+      "source_path": "scripts/repath_supplementary_scene_assets.py",
+      "sha256_original": "cef04c100d76e6ace9ffab42a6a246331c5b97cadd37626c35fd9a7db039d9c3",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/run_candidate_diversity_sweep.py",
+      "source_project": "v621",
+      "source_path": "scripts/run_candidate_diversity_sweep.py",
+      "sha256_original": "f7cb4ef1a2b47c4c1036090468873ace98d4caaa960ee41f4e0b04a23c29cc30",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/run_grasp_place_pipeline.py",
+      "source_project": "v621",
+      "source_path": "scripts/run_grasp_place_pipeline.py",
+      "sha256_original": "c0192ba4b9220df31c793de86043a22ebdaa0212b1227274783f4e5e02fdb3b7",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/run_pose_paper_inference_sweeps.py",
+      "source_project": "v621",
+      "source_path": "scripts/run_pose_paper_inference_sweeps.py",
+      "sha256_original": "b15d022622222b10217a268ab4aac23f5ec99604361773d7fbf72180978b073c",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/run_pose_paper_main.py",
+      "source_project": "v621",
+      "source_path": "scripts/run_pose_paper_main.py",
+      "sha256_original": "a4d617b6b8d64fa0c99465fb86eab594256e8245d936097e4c53dcf60ef2eb37",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/run_pose_paper_postprocess_ablations.py",
+      "source_project": "v621",
+      "source_path": "scripts/run_pose_paper_postprocess_ablations.py",
+      "sha256_original": "f3d7bcef7c2b0d1351c7330947b19510f77a21d0e63ae834801368ae44d9dfd4",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/run_pose_paper_robustness.py",
+      "source_project": "v621",
+      "source_path": "scripts/run_pose_paper_robustness.py",
+      "sha256_original": "e42d767fdc2cfa46a35f65ef656ca1c5ba7e1ec3f50f7c1ba80d8c0e89616a93",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/run_residual_weight_sweep.py",
+      "source_project": "v621",
+      "source_path": "scripts/run_residual_weight_sweep.py",
+      "sha256_original": "f3001f4db3f2346d59b7a8cc17c328eac2e8745e171f8ec46679a4a441a8dba1",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/run_runtime_breakdown.py",
+      "source_project": "v621",
+      "source_path": "scripts/run_runtime_breakdown.py",
+      "sha256_original": "63152fb49e570df18e821421cca753bcf077c2a11234c7e289a63c24260362dc",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/screen_pose_stage_checkpoints.py",
+      "source_project": "v621",
+      "source_path": "scripts/screen_pose_stage_checkpoints.py",
+      "sha256_original": "309e7c2cce88e5eac92495cdff4482918dab0ea9c7d4ab503504dbf5b240ab9f",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/train_balance.py",
+      "source_project": "v621",
+      "source_path": "scripts/train_balance.py",
+      "sha256_original": "ec0313fc5d4fb833ac65defa6c15603ab05b0702404a8d2f26290db72578bcea",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/train_condition_trajectory_baseline.py",
+      "source_project": "v621",
+      "source_path": "scripts/train_condition_trajectory_baseline.py",
+      "sha256_original": "e8504412de180a0d586ac5b94b3db561656accf091f65fa857e5e511dc715a8b",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/train_visual_cfm_v621.py",
+      "source_project": "v621",
+      "source_path": "scripts/train_visual_cfm_v621.py",
+      "sha256_original": "65d32669ee823f65b888e708a578749762df410ad2c761a7893513342d48907e",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/scripts/upgrade_pose_dataset.py",
+      "source_project": "v621",
+      "source_path": "scripts/upgrade_pose_dataset.py",
+      "sha256_original": "ea695fa7ce5da53d0e5d3c4d3751b4a9f07027a259bf4cdcd49028006077c443",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/__init__.py",
+      "source_project": "v621",
+      "source_path": "src/__init__.py",
+      "sha256_original": "5bba6780c2e87a9b95927433d92c1c0e8d8ad2650c3edde0838850f67932039e",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/evaluation/__init__.py",
+      "source_project": "v621",
+      "source_path": "src/evaluation/__init__.py",
+      "sha256_original": "512d755389951ea98a5709d6c81c802020a05c7e4c391a17c2196c6b2bd1ce38",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/h1_1111_grasp/__init__.py",
+      "source_project": "v621",
+      "source_path": "src/h1_1111_grasp/__init__.py",
+      "sha256_original": "4788b266c61da470e79f88ad26fdaad052c258916e4c3c8cbe3a12a8a1ad0167",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/h1_1111_grasp/constants.py",
+      "source_project": "v621",
+      "source_path": "src/h1_1111_grasp/constants.py",
+      "sha256_original": "3b0419c3eea6e067cc8516bc463f1902174886d8039d6603ebe5506d2d22452f",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/h1_1111_grasp/env_cfg.py",
+      "source_project": "v621",
+      "source_path": "src/h1_1111_grasp/env_cfg.py",
+      "sha256_original": "f358b11c931042d7fb404d6a187402787f13f13e82e11810945149615093046b",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/h1_1111_grasp/mdp.py",
+      "source_project": "v621",
+      "source_path": "src/h1_1111_grasp/mdp.py",
+      "sha256_original": "4d02640eed3e39842891462d4f22bd6b219ce30ffc4c2bfde1fee9e6876938ed",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/h1_1111_grasp/rgbd_geometry.py",
+      "source_project": "v621",
+      "source_path": "src/h1_1111_grasp/rgbd_geometry.py",
+      "sha256_original": "fd46dec7552f6700c34038222bfc366cbeaf22db8dda8f3530e6a9088ddc27eb",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/h1_1111_grasp/trajectory_safety.py",
+      "source_project": "v621",
+      "source_path": "src/h1_1111_grasp/trajectory_safety.py",
+      "sha256_original": "74c8ff9e758eb76faca967f915434fea49320261c3069b442ff2851283b7a1f6",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/h1_1111_grasp/usd_spawner.py",
+      "source_project": "v621",
+      "source_path": "src/h1_1111_grasp/usd_spawner.py",
+      "sha256_original": "a7450c78629689320da3c757f1b797edc43f33cab81229661d39de3a161521fd",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/models/__init__.py",
+      "source_project": "v621",
+      "source_path": "src/models/__init__.py",
+      "sha256_original": "aa20767b9096c55bd4f619bb48b3a8b44a524ca54fe228491a582dffb0751cb8",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/models/conditional_trajectory_baselines.py",
+      "source_project": "v621",
+      "source_path": "src/models/conditional_trajectory_baselines.py",
+      "sha256_original": "8c83e894d5e3ab42824a0c7b6859792d30799dca3e4f2d4e4351626c825a4baf",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/models/flow_matching.py",
+      "source_project": "v621",
+      "source_path": "src/models/flow_matching.py",
+      "sha256_original": "47b0b2f12de74f41ead09078f5af2973b07ade1d5a4cd2b21e7dab5e807fbb2a",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/models/obstacle_flow_matching.py",
+      "source_project": "v621",
+      "source_path": "src/models/obstacle_flow_matching.py",
+      "sha256_original": "c08494b05f4171a79866bb3060a96044f3b8cb78f0ce6d446adf0a432b97be7b",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/planning/__init__.py",
+      "source_project": "v621",
+      "source_path": "src/planning/__init__.py",
+      "sha256_original": "6ee4f049a3fa38459f24c7a130d6d04371173ef0cdc194f51bc24dcc47825b74",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/planning/baselines.py",
+      "source_project": "v621",
+      "source_path": "src/planning/baselines.py",
+      "sha256_original": "06eb6f1f7fc945bf292ad6ddf1e3ef96e6fbf638b8b032a6c2d1963533318b19",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/planning/camera_safety.py",
+      "source_project": "v621",
+      "source_path": "src/planning/camera_safety.py",
+      "sha256_original": "bdfae1aabd20769052f49d177e575b8c99a55d1dc0c0b667a4b12f9528c68a0e",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/planning/differentiable_safety.py",
+      "source_project": "v621",
+      "source_path": "src/planning/differentiable_safety.py",
+      "sha256_original": "7d15a3495d44bc0953fe39ede21ea883db27b36d4280a81bc487fe160f29a3b3",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/planning/expert_optimizer.py",
+      "source_project": "v621",
+      "source_path": "src/planning/expert_optimizer.py",
+      "sha256_original": "1e9cf7e64b783f7ba64b37648afc32f9ffc56258b2e6f328a22ddd18411409d9",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/planning/expert_pipeline.py",
+      "source_project": "v621",
+      "source_path": "src/planning/expert_pipeline.py",
+      "sha256_original": "462ac8bfe9b413400c5317a526bfe0653c6353657e6f33fca38763d308099d39",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/planning/flow_postprocess.py",
+      "source_project": "v621",
+      "source_path": "src/planning/flow_postprocess.py",
+      "sha256_original": "e7e218e827536bed963e279da829daa577cb130f26b269ca920cd993c6b22027",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/planning/grasp_pose.py",
+      "source_project": "v621",
+      "source_path": "src/planning/grasp_pose.py",
+      "sha256_original": "6cf435ca6e12f9dfbb14f04a618e69d44a001707f5a0aac7a797525d5cc67392",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/planning/ik_solver.py",
+      "source_project": "v621",
+      "source_path": "src/planning/ik_solver.py",
+      "sha256_original": "295aca995baa6a94e2d2f28e52f314f07ba12b89c20b132f90939bbfdc380792",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/planning/metrics.py",
+      "source_project": "v621",
+      "source_path": "src/planning/metrics.py",
+      "sha256_original": "477d4af6b467c0dae0ce24ed969eaaf5f133b78eae490e72457f081a5b583483",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/planning/obstacle_expert.py",
+      "source_project": "v621",
+      "source_path": "src/planning/obstacle_expert.py",
+      "sha256_original": "498752249c9abb6c737481297965900356fe763c74e13507a719385a777f4860",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/planning/trajectory_math.py",
+      "source_project": "v621",
+      "source_path": "src/planning/trajectory_math.py",
+      "sha256_original": "441bff3011c81cd3898956ec2fc4273b4a5679c72263c607027c3f3ac100721d",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/robot/__init__.py",
+      "source_project": "v621",
+      "source_path": "src/robot/__init__.py",
+      "sha256_original": "bad905f899839daff8884c7d7d4e1e18f0924fa04f47ae8db75d0c8488913859",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/robot/torch_kinematics.py",
+      "source_project": "v621",
+      "source_path": "src/robot/torch_kinematics.py",
+      "sha256_original": "f48dbac17c62dd2c801067b4995640304a7a2803da7e7ad4dff61b3cc3caee76",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/simulation/__init__.py",
+      "source_project": "v621",
+      "source_path": "src/simulation/__init__.py",
+      "sha256_original": "8e0f8f57aea7f5fb3b84ee80d8204fcb9cda1c931f6da9798401b829f7a209a6",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/simulation/kinematic_scene.py",
+      "source_project": "v621",
+      "source_path": "src/simulation/kinematic_scene.py",
+      "sha256_original": "1501041638cda716688297267c0ebc40dca21477d2c46d4f454365a0ff6a9a2f",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/simulation/obstacle_scene.py",
+      "source_project": "v621",
+      "source_path": "src/simulation/obstacle_scene.py",
+      "sha256_original": "0b5129583a08f3dbdc9e791d1405abd7bc248fe2f0e8e8470f35e3368e950384",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/tasks/__init__.py",
+      "source_project": "v621",
+      "source_path": "src/tasks/__init__.py",
+      "sha256_original": "610dfaf50025429b29159cf5d30dae50bd2bfc9e63b1c416c497ef0b305035b8",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/tasks/random_task.py",
+      "source_project": "v621",
+      "source_path": "src/tasks/random_task.py",
+      "sha256_original": "efa272a6ff70d4de6e50e3d006469d04eafac0720817d2d10b261a3341e3b9ae",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/training/__init__.py",
+      "source_project": "v621",
+      "source_path": "src/training/__init__.py",
+      "sha256_original": "b45826c459a965d5d0313431307fc898367eb2bf84e6932dba71b2731f879867",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/training/checkpoint.py",
+      "source_project": "v621",
+      "source_path": "src/training/checkpoint.py",
+      "sha256_original": "c2f6d19c9068434b716ccf6333d41a9f52678cb0b4f8682f6ae58b20c11eba8a",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/training/losses.py",
+      "source_project": "v621",
+      "source_path": "src/training/losses.py",
+      "sha256_original": "3d87311987c98e79db5a18bd7ca683f452c56bf6b3a5d367c3db74f18b13e11d",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/utils/__init__.py",
+      "source_project": "v621",
+      "source_path": "src/utils/__init__.py",
+      "sha256_original": "d440b067320ec4d2abf10515ed28751867ebb6954ce534b302095952a3be1f3a",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/src/utils/config.py",
+      "source_project": "v621",
+      "source_path": "src/utils/config.py",
+      "sha256_original": "07789655274c0870809f0b6a665f5b4366815dca3ae7fbb47512356902e5fa19",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/tests/test_flow_matching.py",
+      "source_project": "v621",
+      "source_path": "tests/test_flow_matching.py",
+      "sha256_original": "c939738e8419d735cd1cf1090d71fa13f125649e2672599058f92f242bc1fd6a",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/tests/test_rgbd_geometry.py",
+      "source_project": "v621",
+      "source_path": "tests/test_rgbd_geometry.py",
+      "sha256_original": "c81e45e8356cac9d9f93f94405f6696a13b709cf57bd9160bc5cde28c8418311",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2.1/tests/test_trajectory_math.py",
+      "source_project": "v621",
+      "source_path": "tests/test_trajectory_math.py",
+      "sha256_original": "e80f1d0bccfb17455e6e64c65fc82cddc02f4b94bc7637b22f17675be1b88951",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/configs/ablations.yaml",
+      "source_project": "v62",
+      "source_path": "configs/ablations.yaml",
+      "sha256_original": "cab0a2cfc4c09347150fb4f3c082d8cc0d704a7d6c03afb8d066eb8c4949b372",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2/configs/balance.yaml",
+      "source_project": "v62",
+      "source_path": "configs/balance.yaml",
+      "sha256_original": "d4075d118bb759810f0bccebbb2c067ddb33df41814d9ba465c7cab7273c720c",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2/configs/dataset.yaml",
+      "source_project": "v62",
+      "source_path": "configs/dataset.yaml",
+      "sha256_original": "aae3131c0b8f217db84cc8bb5d85abbb5c8ca6d011b2a01f4b2013acc8da43ab",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2/configs/evaluation.yaml",
+      "source_project": "v62",
+      "source_path": "configs/evaluation.yaml",
+      "sha256_original": "ed092b87659f45ba81d3b24e3595f450016c9e79a85284243da4a1c548567c96",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2/configs/flow_matching.yaml",
+      "source_project": "v62",
+      "source_path": "configs/flow_matching.yaml",
+      "sha256_original": "725fa77e7512c22392c8b31468210a5a5b8ef08837589fb558f6e9fd1cd63f4f",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2/configs/kinematic_chain.json",
+      "source_project": "v62",
+      "source_path": "configs/kinematic_chain.json",
+      "sha256_original": "a028e53c92ed768398fb81ea14db4f8bdc7a24993928bcd77cb29e49a1dd3a0d",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2/configs/obstacle_flow_matching.yaml",
+      "source_project": "v62",
+      "source_path": "configs/obstacle_flow_matching.yaml",
+      "sha256_original": "fedc126f500cb879a67fd9d564ac6d708a5bc4c3d79f83bf2ff1d4c28d8a141d",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2/configs/obstacle_flow_matching_highres.yaml",
+      "source_project": "v62",
+      "source_path": "configs/obstacle_flow_matching_highres.yaml",
+      "sha256_original": "56133b08d146c883cfcd78955c51bc5af263bae3b5e4f2e646167f4256f1920f",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2/configs/obstacle_flow_matching_multiview.yaml",
+      "source_project": "v62",
+      "source_path": "configs/obstacle_flow_matching_multiview.yaml",
+      "sha256_original": "44a1b80d3f465d29203b05773ef9f354f109e13700c5a6841a2439c744fe428f",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2/configs/obstacles.yaml",
+      "source_project": "v62",
+      "source_path": "configs/obstacles.yaml",
+      "sha256_original": "22413a2dcf241557f517d3cfccf3a529fcdd750aa61e36edb18f1cd496d80d00",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2/configs/obstacles_highres.yaml",
+      "source_project": "v62",
+      "source_path": "configs/obstacles_highres.yaml",
+      "sha256_original": "3aa3e8e132e4c8851c5296fdbb55db02faabeefb983252a0fd8f37281efbedcf",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2/configs/paper_experiment_matrix.yaml",
+      "source_project": "v62",
+      "source_path": "configs/paper_experiment_matrix.yaml",
+      "sha256_original": "afbe64896c92382d3bf2b05849b057919bd9d58de5c1cfd824f5e65ab0fbf07d",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2/configs/robot.yaml",
+      "source_project": "v62",
+      "source_path": "configs/robot.yaml",
+      "sha256_original": "fe3352cd0656fad9f7b7e1639c50923616c194cc5d02512ec8bf6bc8ac2642cd",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2/configs/task_generation.yaml",
+      "source_project": "v62",
+      "source_path": "configs/task_generation.yaml",
+      "sha256_original": "e690f7ba0c1b75c97ba7d86e8bcd268308716bc7fcfbcab530ab783e963a0da4",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2/configs/trajectory_optimizer.yaml",
+      "source_project": "v62",
+      "source_path": "configs/trajectory_optimizer.yaml",
+      "sha256_original": "3809fffeea12d6d40b34c4ff6d9ead9753e03fbcf30943991dad9f8c98a77c60",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2/configs/trajectory_visual.yaml",
+      "source_project": "v62",
+      "source_path": "configs/trajectory_visual.yaml",
+      "sha256_original": "edf51663eb0daba47bfd715faadb4f007d943567ea629874c0b36ca815f56693",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2/configs/visual_cfm_five_view_v5_frozen_manifest.yaml",
+      "source_project": "v62",
+      "source_path": "configs/visual_cfm_five_view_v5_frozen_manifest.yaml",
+      "sha256_original": "4c7610e6568169abaf03dfa09b38df218410eb3106db76bdb0c2994e714b8599",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2/configs/visual_cfm_transfer.yaml",
+      "source_project": "v62",
+      "source_path": "configs/visual_cfm_transfer.yaml",
+      "sha256_original": "5ccd8e94511716c5457ce205ff762d14b1957ef7b4ec8ab84645cc49ddf5fcfc",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2/configs/visual_cfm_transfer_4view.yaml",
+      "source_project": "v62",
+      "source_path": "configs/visual_cfm_transfer_4view.yaml",
+      "sha256_original": "5ccd8e94511716c5457ce205ff762d14b1957ef7b4ec8ab84645cc49ddf5fcfc",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2/configs/visual_cfm_transfer_5view.yaml",
+      "source_project": "v62",
+      "source_path": "configs/visual_cfm_transfer_5view.yaml",
+      "sha256_original": "c15890f70df1a651223fbafd695412c319be71944cce2adffc438f0433755535",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2/configs/visual_cfm_transfer_5view_v6.yaml",
+      "source_project": "v62",
+      "source_path": "configs/visual_cfm_transfer_5view_v6.yaml",
+      "sha256_original": "3d54f7f1db8e2ca72c60f9a4280918033909da9f995e8e8ee2c134f5e1bf880e",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2/configs/visual_cfm_v621.yaml",
+      "source_project": "v62",
+      "source_path": "configs/visual_cfm_v621.yaml",
+      "sha256_original": "d7f8c87e6851741a49f5ecb688d0a436977db537691f13bbc275ba01fed690b4",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2/docs/DATA_CONTRACT.md",
+      "source_project": "v62",
+      "source_path": "docs/DATA_CONTRACT.md",
+      "sha256_original": "e33bd184e814897e971b2cf71565e1211eb7da2f4f2e91618186ed2a245ca534",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2/docs/VISUAL_CFM_V62_FINAL_METHOD_SPEC.md",
+      "source_project": "v62",
+      "source_path": "docs/VISUAL_CFM_V62_FINAL_METHOD_SPEC.md",
+      "sha256_original": "53267fed6864e5532972ea270fe259fc0be4cb923c4827d0de8860a4818fce7b",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2/docs/VISUAL_CFM_V6_METHOD_SPEC.md",
+      "source_project": "v62",
+      "source_path": "docs/VISUAL_CFM_V6_METHOD_SPEC.md",
+      "sha256_original": "eb7a51d9e5dd9d62aa74a44062f3e12a0dbe0a7af3cbd1b8f3cf6bd9d3ab7b17",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2/docs/\u5f53\u524d\u8f68\u8ff9\u751f\u6210\u65b9\u6cd5\u6574\u4f53\u6d41\u7a0b.md",
+      "source_project": "v62",
+      "source_path": "docs/\u5f53\u524d\u8f68\u8ff9\u751f\u6210\u65b9\u6cd5\u6574\u4f53\u6d41\u7a0b.md",
+      "sha256_original": "0a5925762462a4bc39baae3cd348cdad577f09013030ba7afc210c519a761de4",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2/docs/\u6574\u5408\u8bf4\u660e_2026-08-07.md",
+      "source_project": "v62",
+      "source_path": "docs/\u6574\u5408\u8bf4\u660e_2026-08-07.md",
+      "sha256_original": "696ebdd196a046d88ca0cc14af23616767770609427c67dbdf9d91fa69e97f03",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2/docs/\u65e0PPO\u76ee\u6807\u6761\u4ef6\u89c6\u89c9\u6293\u53d6\u8f68\u8ff9\u751f\u6210\u7814\u7a76\u6d41\u7a0b.md",
+      "source_project": "v62",
+      "source_path": "docs/\u65e0PPO\u76ee\u6807\u6761\u4ef6\u89c6\u89c9\u6293\u53d6\u8f68\u8ff9\u751f\u6210\u7814\u7a76\u6d41\u7a0b.md",
+      "sha256_original": "62971e1747dd5c0a5caf030453269945e827af98fa69cfd56a4939715068a588",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2/docs/\u6761\u4ef6\u6d41\u5339\u914d\u4e0e\u7269\u7406\u9a8c\u8bc1\u591a\u5019\u9009\u8f68\u8ff9\u65b9\u6cd5_\u5b9e\u9a8c\u7ec4\u68b3\u7406.md",
+      "source_project": "v62",
+      "source_path": "docs/\u6761\u4ef6\u6d41\u5339\u914d\u4e0e\u7269\u7406\u9a8c\u8bc1\u591a\u5019\u9009\u8f68\u8ff9\u65b9\u6cd5_\u5b9e\u9a8c\u7ec4\u68b3\u7406.md",
+      "sha256_original": "e3f7790316f7f954fb09c0d3c8ae6665ff7f06d6b321ad5ca2261c8c8965ca49",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2/requirements_project.txt",
+      "source_project": "v62",
+      "source_path": "requirements_project.txt",
+      "sha256_original": "ea83817af8c4b017b9ab9f1ae553bd60d33fd235aa115d77c20550c4cc0ff534",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "v6.2/scripts/_bootstrap.py",
+      "source_project": "v62",
+      "source_path": "scripts/_bootstrap.py",
+      "sha256_original": "656f5bc9ab8f2126b06a4db207df32d87cd3b3887450055c6af01cf58ac6f6a2",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/scripts/bisect_vis_render.py",
+      "source_project": "v62",
+      "source_path": "scripts/bisect_vis_render.py",
+      "sha256_original": "b69cb7f79aa3d81e14a81f5be8c030611a8f8e4a3d0c46116e5d63a049aea350",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/scripts/capture_mounted_cameras.py",
+      "source_project": "v62",
+      "source_path": "scripts/capture_mounted_cameras.py",
+      "sha256_original": "c5a844a04270839b7232c0deb92d19718b9cc16c8eed7cd91b0ac5bc52669d94",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/scripts/combine_visual_datasets.py",
+      "source_project": "v62",
+      "source_path": "scripts/combine_visual_datasets.py",
+      "sha256_original": "314e2305711229997b28eda9fc6ca0e0ee91649acdf6746e115c7dbb2981fbfc",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/scripts/configure_1111_usd.py",
+      "source_project": "v62",
+      "source_path": "scripts/configure_1111_usd.py",
+      "sha256_original": "586d2c865fc814d7c20f9f98f9c96e0e67bc3cf8b52d58611a5b58082c4385fc",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/scripts/configure_robot_usd.py",
+      "source_project": "v62",
+      "source_path": "scripts/configure_robot_usd.py",
+      "sha256_original": "fdc9f305aaff406c9f556d823f8f1b78ae4522b28508dc229c4d5b2d3d552714",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/scripts/evaluate_balance.py",
+      "source_project": "v62",
+      "source_path": "scripts/evaluate_balance.py",
+      "sha256_original": "ef30d6f156d1a2d78e49f1109274c113ef99538076f125ee85de13ea7125ef09",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/scripts/evaluate_candidate_bank_physx.py",
+      "source_project": "v62",
+      "source_path": "scripts/evaluate_candidate_bank_physx.py",
+      "sha256_original": "579ea61519a5e1bd8136b0dc0d092ee208767f707e059990eab802bee3ed9613",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/scripts/evaluate_visual_cfm.py",
+      "source_project": "v62",
+      "source_path": "scripts/evaluate_visual_cfm.py",
+      "sha256_original": "0a2a7141b87720275dd40fe763447318557cbe88a4631b29490604f9341b94e5",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/scripts/expand_checkpoint.py",
+      "source_project": "v62",
+      "source_path": "scripts/expand_checkpoint.py",
+      "sha256_original": "0ab9596d4d35f5ca5d487eb99788ce2a17b56a8a77abba59cceeb4b913856426",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/scripts/export_kinematic_chain.py",
+      "source_project": "v62",
+      "source_path": "scripts/export_kinematic_chain.py",
+      "sha256_original": "7bc79dbeb2192b102d8a7f696d60d331cb257b75b515687f753c9d3ce0e7e01c",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/scripts/generate_visual_transfer_dataset.py",
+      "source_project": "v62",
+      "source_path": "scripts/generate_visual_transfer_dataset.py",
+      "sha256_original": "9a6951c557db9cf465fb00a5b154dc43361eb0febd3a66845e33d2a2525aa658",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/scripts/inspect_1111_scene.py",
+      "source_project": "v62",
+      "source_path": "scripts/inspect_1111_scene.py",
+      "sha256_original": "be74709ba41243bfc143c657890b04611dd8a650ff0c899b740cef5a1685db1c",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/scripts/merge_visual_transfer_dataset.py",
+      "source_project": "v62",
+      "source_path": "scripts/merge_visual_transfer_dataset.py",
+      "sha256_original": "56ef5dc99fdfd43c6ac94a7f97eeaa7fb2166663e0ad1e90bfc5f88a04837b93",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/scripts/modify_1111_usd.py",
+      "source_project": "v62",
+      "source_path": "scripts/modify_1111_usd.py",
+      "sha256_original": "545e11179bbcecc392669cf5cec01e0d531d6fe51992a4d61ede9ee3c0128c1e",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/scripts/train_balance.py",
+      "source_project": "v62",
+      "source_path": "scripts/train_balance.py",
+      "sha256_original": "ec0313fc5d4fb833ac65defa6c15603ab05b0702404a8d2f26290db72578bcea",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/scripts/train_obstacle_flow.py",
+      "source_project": "v62",
+      "source_path": "scripts/train_obstacle_flow.py",
+      "sha256_original": "8fcbb7ea2ed23bb27095580196f79e92a03770142f3fa7bac30d2e3c6c28b0e0",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/scripts/train_obstacle_vision.py",
+      "source_project": "v62",
+      "source_path": "scripts/train_obstacle_vision.py",
+      "sha256_original": "c7245059d6bd4bd0c7b0d8f270f3676ec61be8dc8b118c00dd9dffe036526362",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/scripts/upgrade_visual_v5_to_v6.py",
+      "source_project": "v62",
+      "source_path": "scripts/upgrade_visual_v5_to_v6.py",
+      "sha256_original": "2237001681e239bde0e8b6bd0b589529d4a9264413a3a3ca2d08220350b63193",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/scripts/verify_frozen_visual_assets.py",
+      "source_project": "v62",
+      "source_path": "scripts/verify_frozen_visual_assets.py",
+      "sha256_original": "285f5ee83ce3f97f85357c47f08ab4f3141828aef8d363327373825ad6b05a81",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/__init__.py",
+      "source_project": "v62",
+      "source_path": "src/__init__.py",
+      "sha256_original": "5bba6780c2e87a9b95927433d92c1c0e8d8ad2650c3edde0838850f67932039e",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/evaluation/__init__.py",
+      "source_project": "v62",
+      "source_path": "src/evaluation/__init__.py",
+      "sha256_original": "512d755389951ea98a5709d6c81c802020a05c7e4c391a17c2196c6b2bd1ce38",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/h1_1111_grasp/__init__.py",
+      "source_project": "v62",
+      "source_path": "src/h1_1111_grasp/__init__.py",
+      "sha256_original": "4788b266c61da470e79f88ad26fdaad052c258916e4c3c8cbe3a12a8a1ad0167",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/h1_1111_grasp/constants.py",
+      "source_project": "v62",
+      "source_path": "src/h1_1111_grasp/constants.py",
+      "sha256_original": "3b0419c3eea6e067cc8516bc463f1902174886d8039d6603ebe5506d2d22452f",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/h1_1111_grasp/env_cfg.py",
+      "source_project": "v62",
+      "source_path": "src/h1_1111_grasp/env_cfg.py",
+      "sha256_original": "f358b11c931042d7fb404d6a187402787f13f13e82e11810945149615093046b",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/h1_1111_grasp/mdp.py",
+      "source_project": "v62",
+      "source_path": "src/h1_1111_grasp/mdp.py",
+      "sha256_original": "4d02640eed3e39842891462d4f22bd6b219ce30ffc4c2bfde1fee9e6876938ed",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/h1_1111_grasp/rgbd_geometry.py",
+      "source_project": "v62",
+      "source_path": "src/h1_1111_grasp/rgbd_geometry.py",
+      "sha256_original": "fd46dec7552f6700c34038222bfc366cbeaf22db8dda8f3530e6a9088ddc27eb",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/h1_1111_grasp/trajectory_safety.py",
+      "source_project": "v62",
+      "source_path": "src/h1_1111_grasp/trajectory_safety.py",
+      "sha256_original": "74c8ff9e758eb76faca967f915434fea49320261c3069b442ff2851283b7a1f6",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/h1_1111_grasp/usd_spawner.py",
+      "source_project": "v62",
+      "source_path": "src/h1_1111_grasp/usd_spawner.py",
+      "sha256_original": "a7450c78629689320da3c757f1b797edc43f33cab81229661d39de3a161521fd",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/models/__init__.py",
+      "source_project": "v62",
+      "source_path": "src/models/__init__.py",
+      "sha256_original": "aa20767b9096c55bd4f619bb48b3a8b44a524ca54fe228491a582dffb0751cb8",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/models/flow_matching.py",
+      "source_project": "v62",
+      "source_path": "src/models/flow_matching.py",
+      "sha256_original": "47b0b2f12de74f41ead09078f5af2973b07ade1d5a4cd2b21e7dab5e807fbb2a",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/models/obstacle_flow_matching.py",
+      "source_project": "v62",
+      "source_path": "src/models/obstacle_flow_matching.py",
+      "sha256_original": "17c0f2093197ce236caf64c2fb986f9f6a395a4281754886c3957bf8ea14a3bb",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/planning/__init__.py",
+      "source_project": "v62",
+      "source_path": "src/planning/__init__.py",
+      "sha256_original": "6ee4f049a3fa38459f24c7a130d6d04371173ef0cdc194f51bc24dcc47825b74",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/planning/baselines.py",
+      "source_project": "v62",
+      "source_path": "src/planning/baselines.py",
+      "sha256_original": "06eb6f1f7fc945bf292ad6ddf1e3ef96e6fbf638b8b032a6c2d1963533318b19",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/planning/camera_safety.py",
+      "source_project": "v62",
+      "source_path": "src/planning/camera_safety.py",
+      "sha256_original": "bdfae1aabd20769052f49d177e575b8c99a55d1dc0c0b667a4b12f9528c68a0e",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/planning/differentiable_safety.py",
+      "source_project": "v62",
+      "source_path": "src/planning/differentiable_safety.py",
+      "sha256_original": "7d15a3495d44bc0953fe39ede21ea883db27b36d4280a81bc487fe160f29a3b3",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/planning/expert_optimizer.py",
+      "source_project": "v62",
+      "source_path": "src/planning/expert_optimizer.py",
+      "sha256_original": "1e9cf7e64b783f7ba64b37648afc32f9ffc56258b2e6f328a22ddd18411409d9",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/planning/expert_pipeline.py",
+      "source_project": "v62",
+      "source_path": "src/planning/expert_pipeline.py",
+      "sha256_original": "462ac8bfe9b413400c5317a526bfe0653c6353657e6f33fca38763d308099d39",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/planning/flow_postprocess.py",
+      "source_project": "v62",
+      "source_path": "src/planning/flow_postprocess.py",
+      "sha256_original": "e7e218e827536bed963e279da829daa577cb130f26b269ca920cd993c6b22027",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/planning/ik_solver.py",
+      "source_project": "v62",
+      "source_path": "src/planning/ik_solver.py",
+      "sha256_original": "3e8c3159712492478262edfb1d7bc408044c8f2f995c8035ad19f7365cfad218",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/planning/metrics.py",
+      "source_project": "v62",
+      "source_path": "src/planning/metrics.py",
+      "sha256_original": "477d4af6b467c0dae0ce24ed969eaaf5f133b78eae490e72457f081a5b583483",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/planning/obstacle_expert.py",
+      "source_project": "v62",
+      "source_path": "src/planning/obstacle_expert.py",
+      "sha256_original": "498752249c9abb6c737481297965900356fe763c74e13507a719385a777f4860",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/planning/trajectory_math.py",
+      "source_project": "v62",
+      "source_path": "src/planning/trajectory_math.py",
+      "sha256_original": "441bff3011c81cd3898956ec2fc4273b4a5679c72263c607027c3f3ac100721d",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/robot/__init__.py",
+      "source_project": "v62",
+      "source_path": "src/robot/__init__.py",
+      "sha256_original": "bad905f899839daff8884c7d7d4e1e18f0924fa04f47ae8db75d0c8488913859",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/robot/torch_kinematics.py",
+      "source_project": "v62",
+      "source_path": "src/robot/torch_kinematics.py",
+      "sha256_original": "f48dbac17c62dd2c801067b4995640304a7a2803da7e7ad4dff61b3cc3caee76",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/simulation/__init__.py",
+      "source_project": "v62",
+      "source_path": "src/simulation/__init__.py",
+      "sha256_original": "8e0f8f57aea7f5fb3b84ee80d8204fcb9cda1c931f6da9798401b829f7a209a6",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/simulation/kinematic_scene.py",
+      "source_project": "v62",
+      "source_path": "src/simulation/kinematic_scene.py",
+      "sha256_original": "1501041638cda716688297267c0ebc40dca21477d2c46d4f454365a0ff6a9a2f",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/simulation/obstacle_scene.py",
+      "source_project": "v62",
+      "source_path": "src/simulation/obstacle_scene.py",
+      "sha256_original": "0b5129583a08f3dbdc9e791d1405abd7bc248fe2f0e8e8470f35e3368e950384",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/tasks/__init__.py",
+      "source_project": "v62",
+      "source_path": "src/tasks/__init__.py",
+      "sha256_original": "610dfaf50025429b29159cf5d30dae50bd2bfc9e63b1c416c497ef0b305035b8",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/tasks/random_task.py",
+      "source_project": "v62",
+      "source_path": "src/tasks/random_task.py",
+      "sha256_original": "efa272a6ff70d4de6e50e3d006469d04eafac0720817d2d10b261a3341e3b9ae",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/training/__init__.py",
+      "source_project": "v62",
+      "source_path": "src/training/__init__.py",
+      "sha256_original": "b45826c459a965d5d0313431307fc898367eb2bf84e6932dba71b2731f879867",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/training/checkpoint.py",
+      "source_project": "v62",
+      "source_path": "src/training/checkpoint.py",
+      "sha256_original": "c2f6d19c9068434b716ccf6333d41a9f52678cb0b4f8682f6ae58b20c11eba8a",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/training/losses.py",
+      "source_project": "v62",
+      "source_path": "src/training/losses.py",
+      "sha256_original": "c20a4b8c67ed79212fa811f7f35f7e90fb69e79726e840665442182efd8e8687",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/utils/__init__.py",
+      "source_project": "v62",
+      "source_path": "src/utils/__init__.py",
+      "sha256_original": "d440b067320ec4d2abf10515ed28751867ebb6954ce534b302095952a3be1f3a",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/src/utils/config.py",
+      "source_project": "v62",
+      "source_path": "src/utils/config.py",
+      "sha256_original": "07789655274c0870809f0b6a665f5b4366815dca3ae7fbb47512356902e5fa19",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/tests/test_camera_safety.py",
+      "source_project": "v62",
+      "source_path": "tests/test_camera_safety.py",
+      "sha256_original": "375c9306cb54075a250395a36d550ecb68c7d36e8660b4dd53dfc0cb9f646c4e",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/tests/test_checkpoint_expansion.py",
+      "source_project": "v62",
+      "source_path": "tests/test_checkpoint_expansion.py",
+      "sha256_original": "ba11467e7e2cbb51db9d30a43d2e15ede7b761abeb67cc2d7a712ef1c3bf3e76",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/tests/test_flow_matching.py",
+      "source_project": "v62",
+      "source_path": "tests/test_flow_matching.py",
+      "sha256_original": "c939738e8419d735cd1cf1090d71fa13f125649e2672599058f92f242bc1fd6a",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/tests/test_multiview_vision_encoder.py",
+      "source_project": "v62",
+      "source_path": "tests/test_multiview_vision_encoder.py",
+      "sha256_original": "1a42f940b635fd32fe5741972952b3eddd6b55c0a96bd5097dc0443c98280788",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/tests/test_obstacle_planning.py",
+      "source_project": "v62",
+      "source_path": "tests/test_obstacle_planning.py",
+      "sha256_original": "1ffcb4f54e9bf9955ae1f2b2b97d328c679bf686850dad0681e334495a6bb4ac",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/tests/test_project_contracts.py",
+      "source_project": "v62",
+      "source_path": "tests/test_project_contracts.py",
+      "sha256_original": "615cd2474bf8be0f8e3f121ffc1e308e5a8e58002f391abf63c066a0b3aa09b5",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/tests/test_rgbd_geometry.py",
+      "source_project": "v62",
+      "source_path": "tests/test_rgbd_geometry.py",
+      "sha256_original": "c81e45e8356cac9d9f93f94405f6696a13b709cf57bd9160bc5cde28c8418311",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/tests/test_trajectory_math.py",
+      "source_project": "v62",
+      "source_path": "tests/test_trajectory_math.py",
+      "sha256_original": "e80f1d0bccfb17455e6e64c65fc82cddc02f4b94bc7637b22f17675be1b88951",
+      "role": "primary"
+    },
+    {
+      "path": "v6.2/tests/test_trajectory_safety.py",
+      "source_project": "v62",
+      "source_path": "tests/test_trajectory_safety.py",
+      "sha256_original": "b48a446867e656a29ba7eea476096c1fcb65121c74463d19fc0839958e1a4703",
+      "role": "primary"
+    }
+  ],
+  "portability_edits": [
+    "v6.2.1/configs/paper_v622_pose_experiments.yaml",
+    "v6.2.1/configs/robot.yaml",
+    "v6.2.1/scripts/screen_pose_stage_checkpoints.py",
+    "v6.2/configs/paper_experiment_matrix.yaml",
+    "v6.2/configs/robot.yaml",
+    "v6.2/scripts/bisect_vis_render.py"
+  ],
+  "note": "Source hashes refer to original files before export-only path edits. Generated publication files are additional.",
+  "maintenance_edits": [
+    "v6.2.1/src/planning/expert_optimizer.py",
+    "v6.2.1/src/planning/metrics.py",
+    "v6.2/src/planning/expert_optimizer.py",
+    "v6.2/src/planning/metrics.py"
+  ]
+}

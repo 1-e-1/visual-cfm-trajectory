@@ -1,0 +1,68 @@
+version: 3
+validation_status: validated_native_pick_return_place
+scene_usd: 1111_copy_native_contact.usd
+plan: outputs/native_contact/native_contact_return_place_plan.npz
+report: outputs/native_contact/native_contact_return_place_recording.json
+media_dir: outputs/media/native_contact_pick_return_place_final
+
+physics:
+  dt_s: 0.005
+  cube_size_m: 0.03
+  cube_mass_kg: 0.03
+  cube_angular_damping: 8.0
+  pad_shape: thin_box
+  pad_size_m: [0.032, 0.006, 0.040]
+  pad_static_friction: 2.5
+  pad_dynamic_friction: 2.0
+  friction_combine_mode: max
+  restitution: 0.0
+  compliant_contact_stiffness_n_m: 800.0
+  compliant_contact_damping_n_s_m: 50.0
+  pad_contact_offset_m: 0.001
+
+control:
+  close_duration_s: 6.0
+  contact_hold_duration_s: 3.0
+  preload_gap_m: 0.003
+  grasp_finger_target_rad: 0.5395
+  gripper_stiffness: 80.0
+  gripper_damping: 20.0
+  gripper_effort_limit: 40.0
+  gripper_velocity_limit_rad_s: 0.15
+  motion_time_scale: 3.0
+  lift_time_scale: 5.0
+  preclose_mode: online_geometric_correction
+  approach_stop_fraction: 1.0
+  skip_gap_servo: true
+  place_center_offset_m: [-0.0018, -0.0022, 0.0009]
+
+recording:
+  camera_view: front_oblique
+  camera_track_object: true
+  camera_eye_w: [-0.58, -0.45, 1.02]
+  camera_target_w: [-0.259, 0.049, 0.749]
+  resolution: [640, 368]
+  fps: 5.0
+
+safety:
+  maximum_pregrasp_object_displacement_m: 0.015
+  maximum_cube_linear_speed_m_s: 2.0
+  maximum_cube_angular_speed_rad_s: 30.0
+  maximum_target_contact_impulse_n_s: 0.2
+  require_bilateral_contact_sensor_force: true
+  require_no_attachment_joint: true
+  require_collision_free: true
+
+observed_result:
+  overall_success: true
+  grasp_success: true
+  place_success: true
+  attachment_joint_created: false
+  lift_m: 0.0911806
+  place_error_m: 0.0065294
+  final_speed_m_s: 0.0002349
+  peak_force_left_n: 82.5192
+  peak_force_right_n: 64.5163
+  bilateral_force_steps: 1079
+  collision_free: true
+  recorded_frames: 189

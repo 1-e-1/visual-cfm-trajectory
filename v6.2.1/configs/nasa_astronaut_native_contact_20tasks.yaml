@@ -1,0 +1,36 @@
+version: 1
+scene_usd: 1111_nasa_astronaut_aux_arm_20tasks.usd
+base_plan: outputs/native_contact/native_contact_return_place_plan.npz
+output_root: outputs/nasa_astronaut_aux_arm_20tasks
+
+camera:
+  eye_w: [-2.50, -2.00, 2.55]
+  target_w: [-0.08, 0.00, 0.95]
+  resolution: [960, 544]
+  fps: 6.0
+  track_object: false
+
+# The foot0-to-world rotation maps [dfx, dfy, dfz] to
+# approximately [-dfz, -dfy, -dfx].  These deterministic points cover
+# vertical, lateral, depth, planar-diagonal, and 3-D diagonal offsets.
+tasks:
+  - {name: task_01_center,              pickup_shift_foot0_m: [ 0.000,  0.000,  0.000], place_translation_foot0_m: [0, 0, 0], jaw_world_z: 0.10}
+  - {name: task_02_world_x_pos,         pickup_shift_foot0_m: [ 0.000,  0.000, -0.015], place_translation_foot0_m: [0, 0, 0], jaw_world_z: 0.10}
+  - {name: task_03_world_x_neg,         pickup_shift_foot0_m: [ 0.000,  0.000,  0.015], place_translation_foot0_m: [0, 0, 0], jaw_world_z: 0.10}
+  - {name: task_04_world_y_pos,         pickup_shift_foot0_m: [ 0.000, -0.010,  0.000], place_translation_foot0_m: [0, 0, 0], jaw_world_z: 0.10}
+  - {name: task_05_world_y_neg,         pickup_shift_foot0_m: [ 0.000,  0.010,  0.000], place_translation_foot0_m: [0, 0, 0], jaw_world_z: 0.10}
+  - {name: task_06_world_z_pos_stable,  pickup_shift_foot0_m: [-0.012,  0.030,  0.020], place_translation_foot0_m: [0, 0, 0], jaw_world_z: 0.10}
+  - {name: task_07_world_z_neg_stable,  pickup_shift_foot0_m: [ 0.012, -0.030, -0.020], place_translation_foot0_m: [0, 0, 0], jaw_world_z: 0.10}
+  - {name: task_08_xyz_ppp,             pickup_shift_foot0_m: [-0.010, -0.010, -0.010], place_translation_foot0_m: [0, 0, 0], jaw_world_z: 0.10}
+  - {name: task_09_xyz_ppn,             pickup_shift_foot0_m: [ 0.010, -0.010, -0.010], place_translation_foot0_m: [0, 0, 0], jaw_world_z: 0.10}
+  - {name: task_10_xyz_pnp,             pickup_shift_foot0_m: [-0.010,  0.010, -0.010], place_translation_foot0_m: [0, 0, 0], jaw_world_z: 0.10}
+  - {name: task_11_xyz_pnn,             pickup_shift_foot0_m: [ 0.010,  0.010, -0.010], place_translation_foot0_m: [0, 0, 0], jaw_world_z: 0.10}
+  - {name: task_12_xyz_npp,             pickup_shift_foot0_m: [-0.010, -0.010,  0.010], place_translation_foot0_m: [0, 0, 0], jaw_world_z: 0.10}
+  - {name: task_13_xyz_npn,             pickup_shift_foot0_m: [ 0.010, -0.010,  0.010], place_translation_foot0_m: [0, 0, 0], jaw_world_z: 0.10}
+  - {name: task_14_xyz_nnp,             pickup_shift_foot0_m: [-0.010,  0.010,  0.010], place_translation_foot0_m: [0, 0, 0], jaw_world_z: 0.10}
+  - {name: task_15_xyz_nnn,             pickup_shift_foot0_m: [ 0.010,  0.010,  0.010], place_translation_foot0_m: [0, 0, 0], jaw_world_z: 0.10}
+  - {name: task_16_outer_low_side,      pickup_shift_foot0_m: [ 0.015, -0.035, -0.025], place_translation_foot0_m: [0, 0, 0], jaw_world_z: 0.10}
+  - {name: task_17_outer_high_side,     pickup_shift_foot0_m: [-0.015,  0.040,  0.025], place_translation_foot0_m: [0, 0, 0], jaw_world_z: 0.10}
+  - {name: task_18_near_a,              pickup_shift_foot0_m: [ 0.005, -0.005,  0.005], place_translation_foot0_m: [0, 0, 0], jaw_world_z: 0.10}
+  - {name: task_19_near_b,              pickup_shift_foot0_m: [-0.005,  0.005, -0.005], place_translation_foot0_m: [0, 0, 0], jaw_world_z: 0.10}
+  - {name: task_20_near_c,              pickup_shift_foot0_m: [-0.005, -0.005, -0.005], place_translation_foot0_m: [0, 0, 0], jaw_world_z: 0.10}

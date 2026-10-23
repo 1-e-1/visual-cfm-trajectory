@@ -1,0 +1,33 @@
+version: 1
+seed: 20260815
+device: cuda:0
+
+scene:
+  usd: 1111_copy.usd
+
+planning:
+  frozen_plan: outputs/pose_grasp_place_plan_true_fingertips_lift.npz
+  data_dir: data/visual_v622_pose/left
+  checkpoint: outputs/checkpoints/visual_cfm_v622_pose.pt
+  model_config: configs/visual_cfm_v622_pose.yaml
+  task_config: configs/grasp_place_pose.yaml
+  candidates: 64
+  max_rows: 49
+
+execution:
+  default_mode: lift
+  headless: false
+  grasp_mode: attachment_constraint
+  cube_size_m: 0.04
+  cube_mass_kg: 0.08
+  physics_dt_s: 0.005
+  motion_time_scale: 2.0
+  pickup_center_offset_m: [-0.0018, -0.0022, 0.0009]
+  place_center_offset_m: [-0.00255, 0.00091, 0.00048]
+  # Desired point between the fingers, in the cube's local XYZ frame.
+  grasp_point_offset_object_m: [0.0, 0.0, 0.0]
+  record: false
+  record_fps: 8.0
+  camera_track_object: true
+  camera_eye_w: [-0.05, 0.28, 1.32]
+  camera_target_w: [-0.26, 0.05, 0.76]

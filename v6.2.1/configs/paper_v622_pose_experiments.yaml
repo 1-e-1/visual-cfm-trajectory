@@ -1,0 +1,47 @@
+version: 1
+protocol_id: pose_visual_cfm_v622_paper_20260812
+project_root: .
+python: python
+dataset: data/visual_v622_pose/left
+checkpoint: outputs/checkpoints/visual_cfm_v622_pose.pt
+model_config: configs/visual_cfm_v622_pose.yaml
+output_root: outputs/paper_v622
+
+evaluation:
+  tasks: 49
+  sampling_seeds: [20260814, 20260815, 20260816]
+  candidates: 64
+  ode_steps: 32
+  position_tolerance_m: 0.03
+  orientation_tolerance_rad: 0.0872664626
+  required_clearance_m: 0.01
+  self_capsule_radius_m: 0.045
+  postprocess_mode: reference_spline
+  geometry_control_points: 16
+  timing_points: 256
+  nominal_max_duration_s: 5.0
+  max_output_duration_s: 30.0
+  unclipped_duration: true
+  independent_stage_generators: true
+  exclude_carried_target_from_cloud: true
+  carried_target_exclusion_padding_m: 0.015
+
+main_groups:
+  raw:
+    postprocess: false
+  full:
+    postprocess: true
+
+reporting:
+  success_interval: wilson_95
+  continuous_interval: bootstrap_95
+  paired_test: mcnemar_exact
+  do_not_pool_repeated_sampling_seeds_as_independent_tasks: true
+
+method_boundaries:
+  ppo_used: false
+  target_pose_source: task_system_given
+  online_physx_candidate_retry: false
+  h1_base_pinned_in_current_physical_demo: true
+  semantic_source: isaac_sim_ground_truth
+  point_cloud_known_geometry_injection_present: true

@@ -1,0 +1,44 @@
+seed: 20260814
+frame_convention:
+  quaternion: wxyz
+  target_pose_frame: active_arm_foot0
+  grasp_frame_axes: same_as_tcp
+gripper_calibration:
+  # Measured from the Robotiq inner-pad surfaces in 1111_copy.usd with fingers open.
+  tcp_to_grasp_center_position_m: [0.0001097, 0.0083994, 0.1396553]
+  tcp_to_grasp_center_quaternion_wxyz: [1.0, 0.0, 0.0, 0.0]
+  open_finger_joint_rad: 0.0
+  closed_finger_joint_rad: 0.7792895
+  verified_open_pad_gap_m: 0.0856538
+  # A verified top-down grasp used only to define the gripper orientation.
+  nominal_top_grasp_reference_q_rad: [-2.1070001, 0.96, 0.597, 0.476, 0.098, -0.029]
+objects:
+  cube_size_m: 0.050
+  cube_mass_kg: 0.08
+  maximum_graspable_width_m: 0.060
+application_grasp:
+  mode: attachment_constraint
+  native_contact_audit: required_separately
+  filter_gripper_object_contact_in_attachment_mode: true
+ik:
+  maximum_candidates: 8
+  restarts: 128
+  iterations: 300
+  position_tolerance_m: 0.005
+  orientation_tolerance_rad: 0.0872664626
+  required_clearance_m: 0.01
+execution:
+  control_frequency_hz: 200
+  # In the installed left-arm foot0 frame, world +Z is foot0 -X.
+  world_up_in_foot0: [-1.0, 0.0, 0.0]
+  approach_distance_m: 0.08
+  lift_distance_m: 0.10
+  preplace_height_m: 0.08
+  place_translation_foot0_m: [0.0, 0.0, -0.18]
+  emergency_clearance_m: 0.015
+  maximum_output_duration_s: 30.0
+success:
+  grasp_center_error_m: 0.015
+  minimum_lift_m: 0.05
+  place_position_error_m: 0.03
+  settle_speed_m_s: 0.03
